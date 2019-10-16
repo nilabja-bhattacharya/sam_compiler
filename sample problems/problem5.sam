@@ -1,0 +1,23 @@
+int arr[100];
+
+void printcombi(int s, int e){
+    if(s == e){
+        for(int i=0;i<e;i++)
+            printf("%d ",arr[i]);
+        printf("/n");
+    }
+    for(int i=s+1;i<e;i++){
+        int x = s+1;
+        swap(arr[i], arr[s]);
+        printcombi(x, e);
+        swap(arr[i], arr[s]);
+    }
+}
+
+
+void allcombi(int n){
+    int arr[n], x = 0;
+    for(int i=0;i<n;i++)
+        arr[i] = i+1;
+    printcombi(x, n);
+}

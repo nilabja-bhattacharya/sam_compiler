@@ -1,6 +1,7 @@
-void uniquewords(char *filename){
+void uniquewords(char filename[]){
     int chararr[26];
-    FILE *fptr = fopen(filename, "r"); 
+    char ch = 'r';
+    FILE* fptr = fopen(filename, ch); 
     if (fptr == NULL){ 
         printf("Cannot open file \n"); 
     } 
@@ -22,10 +23,10 @@ void uniquewords(char *filename){
         bool isunique = true;
         for(int k1 = 0;k1<k;k++){
             int k2 = 0;
-            while(listofwords[k1][k2]!='\0' and s[k2]!='\0' and s[k2]!=listofwords[k1][k2]){
+            while(listofwords[k1][k2]!=NULL and s[k2]!=NULL and s[k2]!=listofwords[k1][k2]){
                 k2++;
             }
-            if(listofwords[k1][k2]=='\0' and s[k2]=='\0'){
+            if(listofwords[k1][k2]==NULL and s[k2]==NULL){
                 isunique = false;
                 break;
             }
@@ -40,9 +41,10 @@ void uniquewords(char *filename){
     fclose(fptr); 
     for(int k1 = 0;k1<k;k++){
             int k2 = 0;
-            while(listofwords[k1][k2]!='\0'){
-                cout<<listofwords[k1][k2++];
+            while(listofwords[k1][k2]!=NULL){
+                printf("%c ",listofwords[k1][k2]);
+                k2++;
             }
-            cout<<"\n";
+            printf("\n");
         }
 }

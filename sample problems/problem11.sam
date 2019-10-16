@@ -1,6 +1,7 @@
-void alphabetfreq(char *filename){
+void alphabetfreq(char filename[]){
     int chararr[26];
-    FILE *fptr = fopen(filename, "r"); 
+    char ch = 'r';
+    FILE* fptr = fopen(filename, ch); 
     if (fptr == NULL){ 
         printf("Cannot open file \n"); 
     } 
@@ -8,7 +9,8 @@ void alphabetfreq(char *filename){
     c = fgetc(fptr); 
     while (c != EOF) 
     { 
-        chararr[c] = chararr[c-'a'] + 1;
+        int x = c-'a';
+        chararr[c] = chararr[x] + 1;
         c = fgetc(fptr); 
     } 
   
