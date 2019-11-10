@@ -1,0 +1,2 @@
+../sampleproblems/problem4.sam
+ VOID  pythagoreanTriplets  INT  limit  INT  =  c  b  a  0  SEMI COLON  INT  =  m  2  SEMI COLON  WHILE  <  c  limit  FOR  INT  =  n  1  <  n  m  ++  n  = 0 a  -  *  m  m  *  n  n  SEMI COLON  = 0 b  *  *  2  m  n  SEMI COLON  = 0 c  +  *  m  m  *  n  n  SEMI COLON  IF  >  c  limit  BREAK  SEMI COLON  printf  "%d %d %d\n"  SEMI COLON  ++  m  SEMI COLON 

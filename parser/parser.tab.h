@@ -45,49 +45,44 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    SEMI_COLON = 258,
-    COMMA = 259,
-    START_BLOCK = 260,
-    CLOSE_BLOCK = 261,
-    OPEN_PARENTHESIS = 262,
-    CLOSE_PARENTHESIS = 263,
-    OPEN_SQUARE_BRACKET = 264,
-    CLOSE_SQUARE_BRACKET = 265,
-    NEGATION = 266,
-    INT = 267,
-    FLOAT = 268,
-    CHAR = 269,
-    BOOL = 270,
+    INT_C = 258,
+    FLOAT_C = 259,
+    CHAR_C = 260,
+    STRING_C = 261,
+    ID = 262,
+    CONST = 263,
+    BOOL = 264,
+    INT = 265,
+    FLOAT = 266,
+    CHAR = 267,
+    FILE_T = 268,
+    NULL_T = 269,
+    EOF_T = 270,
     VOID = 271,
     IF = 272,
     ELSE = 273,
-    BREAK = 274,
-    CONTINUE = 275,
-    FOR = 276,
-    WHILE = 277,
-    MAIN = 278,
-    CONST = 279,
-    TRUE = 280,
-    FALSE = 281,
-    RETURN = 282,
-    ENDL = 283,
-    FILEP = 284,
-    EOFP = 285,
-    NULLP = 286,
-    INT_LITERAL = 287,
-    FLOAT_LITERAL = 288,
-    STRING_LITERAL = 289,
-    CHAR_LITERAL = 290,
-    IDENTIFIER = 291,
-    ARITHMATICOP = 292,
-    UNARYOP = 293,
-    CONDITIONALOP = 294,
-    RELATIONALOP = 295,
-    ASSIGNMENTOP = 296,
-    ASSIGNMENT = 297,
-    OP_MINUS = 298,
-    OP_PLUS = 299,
-    UNARY_MINUS = 300
+    FOR = 274,
+    WHILE = 275,
+    BREAK = 276,
+    CONTINUE = 277,
+    TRUE = 278,
+    FALSE = 279,
+    RETURN = 280,
+    PRINT = 281,
+    AND = 282,
+    OR = 283,
+    NEQ = 284,
+    LEQ = 285,
+    GEQ = 286,
+    EQ = 287,
+    UMINUS = 288,
+    INC = 289,
+    DEC = 290,
+    PEQ = 291,
+    MEQ = 292,
+    MULTEQ = 293,
+    DIVEQ = 294,
+    MODEQ = 295
   };
 #endif
 
@@ -96,22 +91,16 @@ extern int yydebug;
 
 union YYSTYPE
 {
-#line 12 "parser.y" /* glr.c:197  */
+#line 23 "parser.y" /* glr.c:197  */
 
-  int int_literal_val;
-  float float_literal_val;
-  char *string_literal_val;
-  char *char_literal_val;
-  char *identifier_val;
-  char *arithmaticop_val;
-  char *unaryop_val;
-  char *assignop_val;
-  char *assign_val;
-  char *conditionalop_val;
-  char *relationalop_val;
-  char *error;
+  int as_int;
+  float as_float;
+  char *as_char;
+  char *as_str;
+  char *as_id;
+  struct ASTNODE *ast_node;
 
-#line 115 "parser.tab.h" /* glr.c:197  */
+#line 104 "parser.tab.h" /* glr.c:197  */
 };
 
 typedef union YYSTYPE YYSTYPE;

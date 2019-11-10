@@ -1,0 +1,2 @@
+../sampleproblems/problem6.sam
+ INT  arr  [  1000  ]  SEMI COLON  VOID  insertionSort  INT  arr  INT  n  INT  j  key  SEMI COLON  FOR  INT  =  i  1  <  i  n  ++  i  = 0 key  arr  [  i  ]  SEMI COLON  = 0 j  -  i  1  SEMI COLON  WHILE  &&  >=  j  0  >  arr  [  j  ]  key  INT  =  x  +  j  1  SEMI COLON  = 0 arr  [  x  ]  arr  [  j  ]  SEMI COLON  = 0 j  -  j  1  SEMI COLON  INT  =  x  +  j  1  SEMI COLON  = 0 arr  [  x  ]  key  SEMI COLON 

@@ -1,7 +1,7 @@
-parser: sam_scanner.l parser.y
-	flex sam_scanner.l
+parser: scanner.l parser.y ast.h ast.c
+	flex scanner.l
 	bison -d parser.y
-	gcc -o parser lex.yy.c parser.tab.c -lfl
+	gcc -o parser lex.yy.c parser.tab.c ast.c -lfl
 
 clean:
 	rm lex.yy.c parser.tab.c parser.tab.h

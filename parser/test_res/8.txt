@@ -1,0 +1,2 @@
+../sampleproblems/problem5.sam
+ INT  arr  [  100  ]  SEMI COLON  VOID  printcombi  INT  s  INT  e  IF  ==  s  e  FOR  INT  =  i  0  <  i  e  ++  i  printf  "%d "  SEMI COLON  printf  "/n"  SEMI COLON  FOR  INT  =  i  +  s  1  <  i  e  ++  i  INT  =  x  +  s  1  SEMI COLON  swap  arr  [  s  ]  arr  [  i  ]  SEMI COLON  printcombi  e  x  SEMI COLON  swap  arr  [  s  ]  arr  [  i  ]  SEMI COLON  VOID  allcombi  INT  n  INT  =  x  arr  [  n  ]  0  SEMI COLON  FOR  INT  =  i  0  <  i  n  ++  i  = 0 arr  [  i  ]  +  i  1  SEMI COLON  printcombi  n  x  SEMI COLON 

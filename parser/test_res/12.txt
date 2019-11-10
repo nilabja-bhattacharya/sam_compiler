@@ -1,0 +1,2 @@
+../sampleproblems/problem9.sam
+ INT  C  [  10  ]  [  10  ]  B  [  10  ]  [  10  ]  A  [  10  ]  [  10  ]  SEMI COLON  VOID  add  FOR  INT  =  i  0  <  i  N  ++  i  FOR  INT  =  j  0  <  j  N  ++  j  = 0 C  [  i  ]  [  j  ]  +  A  [  i  ]  [  j  ]  B  [  i  ]  [  j  ]  SEMI COLON 

@@ -1,0 +1,2 @@
+../sampleproblems/problem3.sam
+ INT  sumofallprime  INT  x  INT  =  sum  0  SEMI COLON  FOR  INT  =  i  2  <  i  x  ++  i  INT  =  fl  0  SEMI COLON  FOR  INT  =  j  2  <=  *  j  j  i  ++  j  IF  ==  %  i  j  0  = 0 fl  1  SEMI COLON  BREAK  SEMI COLON  IF  ==  fl  0  = 0 sum  +  sum  i  SEMI COLON  RETURN  sum  SEMI COLON 

@@ -1,0 +1,2 @@
+../sampleproblems/problem2.sam
+ BOOL  isprime  INT  x  FOR  INT  =  i  2  <=  *  i  i  x  ++  i  IF  ==  %  x  i  0  RETURN  0  SEMI COLON  RETURN  1  SEMI COLON 

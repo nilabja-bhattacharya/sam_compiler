@@ -1,0 +1,2 @@
+../sampleproblems/problem11.sam
+ VOID  alphabetfreq  CHAR  filename  INT  chararr  [  26  ]  SEMI COLON  CHAR  =  ch  'r'  SEMI COLON  FILE_T  =  fptr  fopen  ch  filename  SEMI COLON  IF  ==  fptr  NULL  printf  "Cannot open file \n"  SEMI COLON  = 0 c  fgetc  fptr  SEMI COLON  WHILE  !=  c  EOF  INT  =  x  -  c  'a'  SEMI COLON  = 0 chararr  [  c  ]  +  chararr  [  x  ]  1  SEMI COLON  = 0 c  fgetc  fptr  SEMI COLON  fclose  fptr  SEMI COLON 

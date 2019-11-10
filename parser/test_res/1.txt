@@ -1,0 +1,2 @@
+../sampleproblems/problem10.sam
+ INT  res  [  10  ]  [  10  ]  mat2  [  10  ]  [  10  ]  mat1  [  10  ]  [  10  ]  SEMI COLON  VOID  multiply  FOR  INT  =  i  0  <  i  10  ++  i  FOR  INT  =  j  0  <  j  10  ++  j  = 0 res  [  i  ]  [  j  ]  0  SEMI COLON  FOR  INT  =  k  0  <  k  10  ++  k  += 1 res  [  i  ]  [  j  ]  *  mat1  [  i  ]  [  k  ]  mat2  [  k  ]  [  j  ]  SEMI COLON 

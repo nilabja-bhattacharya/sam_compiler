@@ -1,0 +1,2 @@
+../sampleproblems/problem1.sam
+ INT  pow  INT  a  INT  b  INT  =  y  =  x  1  a  SEMI COLON  BREAK  SEMI COLON  WHILE  >  b  0  IF  ==  %  b  2  1  = 0 x  *  x  y  SEMI COLON  = 0 y  *  y  y  SEMI COLON  = 0 b  /  b  2  SEMI COLON  RETURN  x  SEMI COLON  INT  func  INT  n  INT  k  INT  =  sum  0  SEMI COLON  FOR  INT  =  i  1  <=  i  n  ++  i  += 1 sum  pow  k  i  SEMI COLON 
